@@ -1,0 +1,22 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html{
+  background-color: #373a3c;
+}
+
+h1{
+  color: white;
+}
+body { 
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+.basic-container {
+  padding: 30px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}

@@ -1,0 +1,47 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+          3 Hours Ago
+      </mat-panel-title>
+      <mat-panel-description>
+          UK Parliament Member Suggests Making Bitcoin a Payment Option for Local Taxation System 
+          <i style="font-size:10px;">https://cointelegraph.com</i>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    A conservative member (MP) of the United Kingdom’s (U.K.) Parliament has said that making payments to local authorities and utility providers with Bitcoin (BTC) should be possible. The MP’s statements were reported by local news outlet Express.co.uk on Dec. 10.
+    The article notes that Eddie Hughes, a member of the U.K. Parliament for the Walsall North constituency, described himself as a “crypto enthusiast with amateur knowledge.” He notes that blockchain gets a lot of attention and members of the parliament “have a duty to understand it.”
+    Hughes further explained that he recently met with the Royal National Lifeboat Institution, which accepts cryptocurrency donations, and that the encounter made him think:
+
+</mat-expansion-panel>
+<ng-container *ngFor="let article of this.newsManager.articles">
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title> {{article.date}} </mat-panel-title>        
+        <mat-panel-description>
+            {{ article.title }}
+            <i style="font-size:10px; margin-left:5px;">{{ article.url }}</i>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      {{ article.text }}
+  </mat-expansion-panel>
+</ng-container>
+<!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        4 Hours Ago
+      </mat-panel-title>
+      <mat-panel-description>
+          Crypto Exchange ErisX Appoints Digital Markets and Exchange Veteran Matt Trudeau as CSO
+          <i style="font-size:10px;">https://cointelegraph.com</i>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    
+    New crypto exchange ErisX has announced the appointment of veteran exchange founder Matt Trudeau as its chief strategy officer (CSO), according to a press release published Dec. 10.
+    As reported this October, ErisX is a reboot of traditional futures market Eris Exchange, and is expected to offer spot trading in Bitcoin (BTC), Ethereum (ETH) and Litecoin (LTC), alongside futures contracts in 2019 Q2, pending United States  regulators’ approval.
+    According to the ErisX press release and his LinkedIn profile, Matt Trudeau has to date assisted in ten global market launches — including Instinet, Chi-X, IEX and Tradewind. The latter is a platform which leverages blockchain technology to tokenize the trading, settlement and ownership of precious metals. Trudeau is also currently CEO of a Brooklyn-based crypto- and blockchain-focused startup consultancy firm.
+
+  </mat-expansion-panel> -->
+</mat-accordion>
