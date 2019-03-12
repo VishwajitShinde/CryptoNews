@@ -15,6 +15,10 @@ import { MainnewsComponent } from './mainnews/mainnews.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { MaterialModule } from './material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -23,7 +27,9 @@ import { ContactusComponent } from './contactus/contactus.component';
     MainnewsComponent,
     HomeComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactusComponent,
+    WelcomeComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -31,42 +37,11 @@ import { ContactusComponent } from './contactus/contactus.component';
     FormsModule,
     DemoMaterialModule,
     HttpClientModule,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     AppRoutingModule,
     MatExpansionModule,
-    
     ReactiveFormsModule,
+    MaterialModule,
+    FlexLayoutModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
